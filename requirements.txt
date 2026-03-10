@@ -1,0 +1,14 @@
+# GPSL Minimal Simulation Requirements
+# =====================================
+#
+# The minimal pod simulation (examples/pod_simulation.py) currently uses
+# only Python standard library, so no external dependencies are required.
+#
+# Python version: 3.7+
+#
+# Future additions may include:
+# - networkx (for graph representations)
+# - pydantic (for data validation)
+# - rich (for enhanced terminal output)
+#
+# These will be added as features are implemented.
