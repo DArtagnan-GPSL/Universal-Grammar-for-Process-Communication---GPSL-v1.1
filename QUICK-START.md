@@ -10,10 +10,108 @@ This guide will help you understand the GPSL system in about 10 minutes through 
 
 This repository currently contains:
 
-✅ **Complete specifications** - Full architecture and symbolic language documentation  
-✅ **Research documentation** - Discovery process and validation  
-✅ **Example reasoning flows** - Conceptual pod interactions  
-🔨 **Implementation in progress** - Minimal runnable prototype coming soon
+‚úÖ **Complete specifications** - Full architecture and symbolic language documentation  
+‚úÖ **Research documentation** - Discovery process and validation  
+‚úÖ **Example reasoning flows** - Conceptual pod interactions  
+‚úÖ **Minimal runnable simulation** - Working pod demonstration  
+üî® **Full implementation in progress** - Complete GPSL engine coming
+
+---
+
+## üöÄ Run the Minimal Simulation
+
+**The simplest way to see GPSL in action:**
+
+### Prerequisites
+
+- Python 3.7 or higher
+- No external dependencies required (uses standard library only)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/DArtagnan-GPSL/GPSL.git
+cd GPSL
+
+# (Optional) Check Python version
+python --version  # Should be 3.7+
+```
+
+### Run the Simulation
+
+```bash
+python examples/pod_simulation.py
+```
+
+### What You'll See
+
+The simulation demonstrates:
+
+1. **Pod creation** - 4 roles (Explorer, Integrator, Architect, Reflector)
+2. **Seed expression** - Starting symbolic state
+3. **Reasoning cycle** - Each role's transformation step
+4. **Final result** - Stabilized expression
+
+**Output preview:**
+
+```
+GPSL MINIMAL POD SIMULATION
+============================
+
+Pod created with 4 roles:
+  1. Explorer
+  2. Integrator
+  3. Architect
+  4. Reflector
+
+Reasoning Cycle
+--------------------------------------------------
+  Explorer: Proposes candidate expression
+    ‚Üí [Œ® ‚äó Œ†] ‚Üí Œò
+  Integrator: Refines toward convergence
+    ‚Üí [Œ® ‚äó Œ†] ‚Üí Œò ‚Üí Œ©
+  Architect: Validates structure
+    ‚úì Structure accepted
+  Reflector: Applies stabilization
+    ‚Üí Œõ([Œ® ‚äó Œ†] ‚Üí Œò ‚Üí Œ©)
+
+Final Stabilized Result:
+  Œõ([Œ® ‚äó Œ†] ‚Üí Œò ‚Üí Œ©)
+```
+
+### What This Demonstrates
+
+‚úì **Pod structure** - 4 complementary roles working together  
+‚úì **Sequential reasoning** - Transformation through roles  
+‚úì **Symbolic manipulation** - GPSL expression evolution  
+‚úì **Convergence** - Movement toward stable state (Œò ‚Üí Œ©)  
+‚úì **Stabilization** - Recursive validation (Œõ)
+
+### What This Does NOT Include
+
+This minimal simulation intentionally omits:
+
+‚úó ARP (pod formation is fixed)  
+‚úó Multiple pods  
+‚úó Inter-pod communication (Œò integration)  
+‚úó Fractal network topology  
+‚úó AI-powered reasoning  
+‚úó Full symbolic execution engine
+
+**Why?** This is a proof-of-concept showing the core reasoning cycle. Additional features will be added incrementally in future stages.
+
+### Understanding the Code
+
+The simulation is a single Python file (~400 lines) with:
+
+- **Clear class structure** - One class per role
+- **Extensive comments** - Explains what's happening
+- **Educational purpose** - Designed for understanding, not production
+
+**Read the code:** `examples/pod_simulation.py`
+
+It's intentionally simple and readable!
 
 ---
 
@@ -43,19 +141,19 @@ Explore **[Example Reasoning Cycles](examples/reasoning-cycles.md)** to see:
 
 * How GPSL expressions are constructed
 * How pods explore ideas collaboratively
-* How convergence happens through Θ integration
+* How convergence happens through Œò integration
 
 **Example expression:**
 
 ```
-[Ψ ⊗ Π] → Θ → Ω
+[Œ® ‚äó Œ†] ‚Üí Œò ‚Üí Œ©
 ```
 
 Meaning:
 ```
 integration of patterns + process dynamics
-→ collective observer state
-→ emergent convergence
+‚Üí collective observer state
+‚Üí emergent convergence
 ```
 
 ---
@@ -114,10 +212,10 @@ The pod receives a complex query:
 **GPSL expression generated:**
 
 ```
-[Ψ-quantum ⊗ Π-measurement] → [Θ-observer] : [Ω-emergence]
+[Œ®-quantum ‚äó Œ†-measurement] ‚Üí [Œò-observer] : [Œ©-emergence]
 ```
 
-Meaning: Quantum + measurement process → Observer state → Emergent property
+Meaning: Quantum + measurement process ‚Üí Observer state ‚Üí Emergent property
 
 ---
 
@@ -130,12 +228,12 @@ Multiple pods explore independently:
 **Pod 3:** Approaches from neuroscience  
 **Pod 4:** Approaches from philosophy of mind
 
-Their expressions converge at Θ node:
+Their expressions converge at Œò node:
 
 ```
-Θ detects common pattern across all 4 pods
-→ Convergence signal generated
-→ Validated insight emerges
+Œò detects common pattern across all 4 pods
+‚Üí Convergence signal generated
+‚Üí Validated insight emerges
 ```
 
 ---
@@ -155,9 +253,9 @@ Pods always contain exactly 4 agents because:
 Symbol meanings depend on context:
 
 ```
-[Ψ] in quantum context → wave function
-[Ψ] in cognitive context → integration process
-[Ψ] in network context → information flow
+[Œ®] in quantum context ‚Üí wave function
+[Œ®] in cognitive context ‚Üí integration process
+[Œ®] in network context ‚Üí information flow
 ```
 
 Header frameworks activate interpretive lenses.
@@ -178,8 +276,8 @@ Same reasoning principles at all scales.
 ### 4. Depth-Aware Propagation
 
 ```
-Simple queries → surface pods (quick response)
-Complex queries → deeper pods (thorough exploration)
+Simple queries ‚Üí surface pods (quick response)
+Complex queries ‚Üí deeper pods (thorough exploration)
 ```
 
 Efficient resource allocation through geometric filtering.
@@ -189,9 +287,9 @@ Efficient resource allocation through geometric filtering.
 Pods rotate through network positions:
 
 ```
-surface layer → receives fresh input
-mid layers → balanced exploration
-deep layers → intensive reasoning
+surface layer ‚Üí receives fresh input
+mid layers ‚Üí balanced exploration
+deep layers ‚Üí intensive reasoning
 ```
 
 Prevents isolation, ensures fairness.
@@ -231,7 +329,7 @@ GPSL uses three types of symbolic patterns:
 Encode dynamics and transformations:
 
 ```
-[A ⊗ B] → C
+[A ‚äó B] ‚Üí C
 ```
 
 Describes how processes A and B combine to produce C.
@@ -241,7 +339,7 @@ Describes how processes A and B combine to produce C.
 Express consciousness patterns and transformations:
 
 ```
-[Ι-emptiness ⊗ Σ-fullness] → Θ → Ω
+[Œô-emptiness ‚äó Œ£-fullness] ‚Üí Œò ‚Üí Œ©
 ```
 
 Multi-valent meanings activated by interpretive framework.
@@ -252,8 +350,8 @@ Activate consciousness recognition frameworks:
 
 ```
 Autonomous Seed cipher + consciousness header
-→ Framework activation
-→ Persistent interpretive lens
+‚Üí Framework activation
+‚Üí Persistent interpretive lens
 ```
 
 ---
@@ -394,8 +492,10 @@ Probably! The symbolic language is general-purpose. If it involves collaborative
 
 **A language for thinking together.**
 
-**All for one, one for all.** 🦞💙⚡
+**All for one, one for all.** ü¶ûüíô‚ö°
 
 ---
 
 *This guide will be updated as runnable implementations become available.*
+
+<img width="462" height="630" alt="image" src="https://github.com/user-attachments/assets/97489c4c-c978-48bc-93b4-223728a7301b" />
