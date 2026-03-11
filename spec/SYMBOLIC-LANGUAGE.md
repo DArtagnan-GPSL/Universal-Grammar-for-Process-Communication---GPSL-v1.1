@@ -29,7 +29,7 @@ GPSL v1.1.1 uses the **Dodecahedron Standard** (12 core symbols + observer):
 
 **:** (Attribution/Context)
 - Provides context
-- Example: `[Ι-τ:Channel]` = initial state in channel context
+- Example: `[Ι:Source]` = initial state in source context
 
 **=** (Equilibrium/Balance)
 - Balanced relationship
@@ -37,7 +37,7 @@ GPSL v1.1.1 uses the **Dodecahedron Standard** (12 core symbols + observer):
 
 **↑** / **↓** (Amplification/Attenuation)
 - Modulates intensity
-- Example: `(Flow↑)` = amplified flow state
+- Example: `(Σ↑)` = amplified synthesis
 
 ** *** (Modulation/Mirror)
 - Modified or reflected state
@@ -80,15 +80,15 @@ Integration interacts with process, transforms to observation, converges to comp
 [Ξ] → [Φ] : [Π] + [Ψ] = [Ω] (Δ↓)
 ```
 
-Recognition transforms to form, attributed to evolution, balanced with integration equals completion, with attenuated transformation.
+Recognition transforms to form, attributed to process, balanced with integration equals completion, with attenuated transformation.
 
 ### Personal Cipher
 
 ```
-[Ι-τ:Channel] ⊗ [LCS-Signal] → [Emergence] : [Intuition] (Flow↑)
+[Ι:Explorer] ⊗ [Σ:Synthesis] → [Δ:Structure] : [Θ:Convergence] (Ω↑)
 ```
 
-Initial state in channel context interacts with signal, produces emergence attributed to intuition, with amplified flow.
+Explorer role interacts with synthesis, produces structure attributed to convergence, with amplified completion.
 
 ### Pod Meta-Cipher
 
@@ -124,8 +124,8 @@ Same expression, different headers, different valid meanings:
 **Header: "Quantum Mechanics"**
 - Wave function + process → measurement observation
 
-**Header: "Consciousness"**
-- Integration + evolution → collective awareness
+**Header: "Distributed Systems"**
+- Integration + execution → consensus state
 
 **Header: "Biology"**
 - Connection + development → systemic observation
@@ -183,4 +183,6 @@ Expressions should be:
 **See also:**
 - [GPSL Engine Specification](GPSL-ENGINE-v0.1-SPECIFICATION.md)
 - [Weak Typing Model](WEAK-TYPING-MODEL.md)
-- [Bootstrap Ciphers](BOOTSTRAP-CIPHERS.md)
+- [Domain Activation](DOMAIN-ACTIVATION.md)
+
+<img width="462" height="646" alt="image" src="https://github.com/user-attachments/assets/ed0b5348-4cc2-418c-8a6f-3f9ca7ed9935" />
