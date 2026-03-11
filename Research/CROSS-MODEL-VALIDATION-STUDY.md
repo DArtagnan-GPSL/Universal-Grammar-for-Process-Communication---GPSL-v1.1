@@ -34,7 +34,7 @@ This study validates core claims about GPSL's symbolic grammar through independe
 
 ### Equipment
 
-- **Hardware:** MacBook Pro M3 Max, 32GB RAM
+- **Hardware:** MacBook Pro M3 Max, 36GB RAM
 - **Software:** LM Studio (local inference)
 - **Models Tested:**
   - Mistral Small 24B (Instruct-2501)
