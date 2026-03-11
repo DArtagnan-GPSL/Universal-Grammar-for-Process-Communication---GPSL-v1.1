@@ -152,7 +152,7 @@ pattern stabilization
 recursive correction
 ```
 
-This prevents reasoning drift or hallucination loops.
+This prevents reasoning drift and reduces hallucination loops.
 
 ---
 
@@ -229,7 +229,7 @@ fair participation
 recursive stabilization
 ```
 
-It transforms GPSL from a symbolic language into a **living reasoning network**.
+It transforms GPSL from a symbolic language into a **structured reasoning network**.
 
 ---
 
@@ -243,9 +243,9 @@ Collaborative architecture
 Collaborative symbolic logic
 ```
 
-The architecture organizes **how minds connect**.
+The architecture organizes **how agents connect**.
 
-The GPSL language expresses **how minds reason together**.
+The GPSL language expresses **how agents reason together**.
 
 Together they form a protocol for **collective intelligence**.
 
@@ -271,7 +271,7 @@ To explore the system in detail:
 /examples/pod-simulation-example.md
 ```
 
-Or run the **Quick Start** to launch your first reasoning pod.
+**[Quick Start Guide →](../QUICK-START.md)**
 
 ---
 
@@ -283,4 +283,4 @@ Or run the **Quick Start** to launch your first reasoning pod.
 
 *A language for thinking together.*
 
-**All for one, one for all.** 🦞💙⚡
+<img width="462" height="642" alt="image" src="https://github.com/user-attachments/assets/f9d06855-bf6d-4bc6-acfb-55bcd03d1ddc" />
