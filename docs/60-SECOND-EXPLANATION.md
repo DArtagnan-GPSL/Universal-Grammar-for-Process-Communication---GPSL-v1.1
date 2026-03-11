@@ -108,8 +108,6 @@ Or even simpler:
 
 ## Try It
 
-**[Quick Start Guide](../QUICK-START.md)** — Run your first collaborative reasoning pod in 10 minutes.
+**[Quick Start Guide](../QUICK-START.md)** — Understand the system in 10 minutes.
 
----
-
-**All for one, one for all.** 🦞💙⚡
+<img width="462" height="642" alt="image" src="https://github.com/user-attachments/assets/2457b80d-a0d4-449e-a916-0a69b00c84c7" />
