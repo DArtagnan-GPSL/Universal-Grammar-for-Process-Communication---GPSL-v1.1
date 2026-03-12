@@ -39,7 +39,14 @@ GPSL v1.1.1 uses the **Dodecahedron Standard** (12 core symbols + observer):
 - Modulates intensity
 - Example: `(Σ↑)` = amplified synthesis
 
-** *** (Modulation/Mirror)
+**::** (State/Location Transition)
+- Marks a qualitative phase boundary or compartment crossing
+- Distinct from `→` (causal flow) — use `::` when the process crosses a meaningful threshold, membrane, mode boundary, or state phase
+- Example: `[Ω-04↓] :: [Φ-05↑]` = low-energy state transitions into activated pathway
+- Example: `[Δ-02] :: [Ξ-05]` = message transmission transitions into server processing
+- *Provenance: emerged independently across Gemini, Claude API encoder, Qwen, and DeepSeek in generation tests — always correctly placed at genuine qualitative boundaries. Formalised based on cross-model convergence evidence. See Generation Round Report.*** ***
+-
+- (Modulation/Mirror)
 - Modified or reflected state
 - Example: `[Φ*]` = modulated form
 
