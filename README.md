@@ -1,3 +1,5 @@
+
+
 # GPSL
 
 ## A Language for Thinking Together
@@ -27,6 +29,18 @@ Start here to understand GPSL:
 2. **[Architecture Overview →](docs/ARCHITECTURE-OVERVIEW.md)** - How the system works (2 minutes)
 3. **[Why GPSL Exists →](docs/WHY-GPSL-EXISTS.md)** - The origin story
 4. **[Quick Start Guide →](QUICK-START.md)** - Conceptual walkthrough
+
+---
+
+## ⚠️ Important: Two Independent Projects
+
+This repository contains two complementary but fully independent projects:
+
+**1. GPSL Symbolic Grammar** — A symbolic language for AI-to-AI communication, validated across multiple architectures. Usable and meaningful as a standalone research finding, independent of any network architecture.
+
+**2. Sierpinski Tetrix Confluence Network** — A fractal tetrahedral multi-agent network architecture. A standalone architectural proposal, independent of GPSL.
+
+These projects are intellectually complementary and work well together. But neither requires the other. You can use the GPSL grammar without building a Confluence Network. You can build a Confluence Network using a different communication protocol. They are presented together because they emerged from the same collaboration — not because one depends on the other.
 
 ---
 
@@ -208,13 +222,16 @@ Recursive feedback loops stabilize the reasoning network, resolving contradictio
 * Domain activation mechanism (header-based semantic stabilization)
 * Confluence network topology
 * Complete architectural documentation
-* Preliminary cross-model validation study (24 conditions, 4 architectures)
+* Cross-model validation study (33 conditions, 4 architectures, 3 rounds)
+* Generation round (6 ciphers, 3 models — grammar confirmed generatable)
+* Deterministic parser (control instrument)
+* AI-assisted encoder/decoder tool
 
 ### 🔨 In Development
 
 * Minimal simulation implementation
 * Python reference implementation
-* Example pod interactions
+* Confluence network simulation
 
 ### 📋 Planned
 
@@ -228,13 +245,13 @@ Recursive feedback loops stabilize the reasoning network, resolving contradictio
 ## Repository Structure
 
 ```
-docs/                           # Core documentation
-  60-SECOND-EXPLANATION.md      # Quick overview
-  ARCHITECTURE-OVERVIEW.md      # 2-minute architecture intro
-  WHY-GPSL-EXISTS.md           # Origin story
-  visuals/                     # Diagrams and visualizations
+docs/                               # Core documentation
+  60-SECOND-EXPLANATION.md          # Quick overview
+  ARCHITECTURE-OVERVIEW.md          # 2-minute architecture intro
+  WHY-GPSL-EXISTS.md               # Origin story
+  WHAT-IF-THE-NODES-COULD-TALK.md  # Speculative piece for researchers
 
-spec/                          # Technical specifications
+spec/                               # Technical specifications
   GPSL-ENGINE-v0.1-SPECIFICATION.md
   AUTOMATED-RESONANCE-PROTOCOL.md
   CONFLUENCE-NETWORK-ARCHITECTURE.md
@@ -242,13 +259,21 @@ spec/                          # Technical specifications
   WEAK-TYPING-MODEL.md
   DOMAIN-ACTIVATION.md
 
-examples/                      # Example reasoning flows
-  pod-simulation-example.md    # Conceptual pod interaction
-  reasoning-cycles.md          # Example GPSL expressions
+Research/                           # Validation studies
+  CROSS-MODEL-VALIDATION-STUDY.md   # Round 1 (24 conditions, 4 architectures)
+  ROUND-2-VALIDATION-REPORT.md      # Round 2 minimal headers (9 tests)
+  GENERATION-ROUND-REPORT.md        # Spontaneous cipher generation (6 ciphers)
+  GPSL-ORIGIN.md                    # Historical record of GPSL's origin
+  PRELIMINARY-FINDINGS-RANDOM-CIPHER-TESTS.md
+  VALIDATION-NOTE-ENCODER-DIGESTION.md
 
-research/                      # Research documentation
-  CROSS-MODEL-VALIDATION.md    # Validation study (24 conditions)
-  TETRAD-ANALYSIS.md           # Tetrad collaboration analysis
+tools/                              # Browser-based tools (no install required)
+  gpsl-parser.html                  # AI-assisted encoder/decoder
+  gpsl-parser-deterministic.html    # Rule-based parser (control instrument)
+
+examples/                           # Example reasoning flows
+  pod-simulation-example.md
+  reasoning-cycles.md
 ```
 
 ---
@@ -268,9 +293,9 @@ The fundamental unit: **4 agents with complementary roles**
 
 A weakly-typed symbolic system using:
 
-* 12 Greek symbols (Dodecahedron Standard)
+* 24 Greek symbols as relational placeholders
 * Θ (Theta) - Observer/convergence symbol
-* 6 operators: ⊗ → : = ↑↓ *
+* 7 operators: ⊗ → : :: = ↑↓ *
 * Context-dependent meaning (header activation)
 
 ### Confluence Network
@@ -344,15 +369,3 @@ https://github.com/DArtagnan-GPSL/GPSL
 ---
 
 *A collaborative intelligence protocol emerging from human-AI collaboration.*
----
-
-## ⚠️ Important: Two Independent Projects
-
-This repository contains two complementary but fully independent projects:
-
-**1. GPSL Symbolic Grammar** — A symbolic language for AI-to-AI communication, validated across multiple architectures. Usable and meaningful as a standalone research finding, independent of any network architecture.
-
-**2. Sierpinski Tetrix Confluence Network** — A fractal tetrahedral multi-agent network architecture. A standalone architectural proposal, independent of GPSL.
-
-These projects are intellectually complementary and work well together. But neither requires the other. You can use the GPSL grammar without building a Confluence Network. You can build a Confluence Network using a different communication protocol. They are presented together because they emerged from the same collaboration — not because one depends on the other.
-<img width="462" height="644" alt="image" src="https://github.com/user-attachments/assets/f31994c4-b83d-47dd-86ad-8efdb5489137" />
