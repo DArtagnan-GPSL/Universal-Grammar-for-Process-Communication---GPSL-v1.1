@@ -2,9 +2,11 @@
 
 *Formal specification of the GPSL symbolic notation*
 
+*v1.2.0 — Updated 12 March 2026: ↺ operator added, GPSL+NL mode formalised, two-path resolution pattern formalised, briefing standard updated*
+
 ## Core Symbol Set
 
-GPSL v1.1.1 uses the **Dodecahedron Standard** (12 core symbols + observer):
+GPSL v1.2.0 uses the **Dodecahedron Standard** (12 core symbols + observer):
 
 ```
 Ι  Ψ  Δ  Ω  Κ  Ε  Α  Β  Γ  Λ  Σ  Φ
@@ -19,34 +21,41 @@ GPSL v1.1.1 uses the **Dodecahedron Standard** (12 core symbols + observer):
 
 ### Primary Operators
 
-**⊗** (Interaction)
-- Combines elements
-- Example: `[Ψ ⊗ Π]` = integration interacts with process
-
-**→** (Transformation)
-- Directional change
+**→** (Flow / Transformation)
+- Directional flow — A leads to B
 - Example: `[Ψ] → [Θ]` = integration transforms to observation
 
-**:** (Attribution/Context)
-- Provides context
+**⊗** (Combination / Fusion)
+- A and B merge or interact
+- Example: `[Ψ ⊗ Π]` = integration fused with process
+
+**::** (Threshold Crossing)
+- A qualitative boundary or phase transition is passed
+- Distinct from → (causal flow) — use :: when the process crosses a meaningful state boundary
+- Provenance: emerged independently across Gemini, Claude, Qwen, DeepSeek in generation tests
+- Example: `[Δ-02] :: [Ξ-05]` = crosses threshold into new state
+
+**:** (Conditional / Attribution)
+- Under condition C / provides context
 - Example: `[Ι:Source]` = initial state in source context
 
-**=** (Equilibrium/Balance)
-- Balanced relationship
-- Example: `[Ψ] = [Ω]` = integration equals completion
+**=** (Resolution / Stable output)
+- Balanced relationship or final resolved state
+- Example: `[Ψ] = [Ω]` = integration resolves to completion
 
-**↑** / **↓** (Amplification/Attenuation)
-- Modulates intensity
+**↑** / **↓** (Amplifying / Dampening feedback)
+- Modulates intensity of output — feedback between states
 - Example: `(Σ↑)` = amplified synthesis
 
-**::** (State/Location Transition)
-- Marks a qualitative phase boundary or compartment crossing
-- Distinct from `→` (causal flow) — use `::` when the process crosses a meaningful threshold, membrane, mode boundary, or state phase
-- Example: `[Ω-04↓] :: [Φ-05↑]` = low-energy state transitions into activated pathway
-- Example: `[Δ-02] :: [Ξ-05]` = message transmission transitions into server processing
-- *Provenance: emerged independently across Gemini, Claude API encoder, Qwen, and DeepSeek in generation tests — always correctly placed at genuine qualitative boundaries. Formalised based on cross-model convergence evidence. See Generation Round Report.*** ***
--
-- (Modulation/Mirror)
+**↺** (Self-Referential Loop)
+- The output of a process feeds back into a prior process node, transforming not just the state but the nature of the process itself
+- Distinct from ↑/↓: those modify output magnitude; ↺ modifies process nature
+- Usage: `[A] ↺ [B]` where B is a prior node in the chain
+- Example: `[S-07] ↺ [R-03]` = the altered self feeds back into reinterpretation, changing how reinterpretation works
+- Canonical use case: recursive identity, memory reconstruction, self-modifying processes
+- Provenance: discovered through Round 3 Test 4 (Consciousness & Time paragraph)
+
+**\*** (Modulation / Mirror)
 - Modified or reflected state
 - Example: `[Φ*]` = modulated form
 
@@ -169,6 +178,55 @@ Form ⊗ Integration → Observation
 Observation → Completion  
 Recursive stabilization of Completion
 
+## GPSL+NL Hybrid Mode
+
+GPSL+NL mode allows natural language where symbolic notation cannot carry the meaning alone.
+
+**Rules:**
+- GPSL operators and symbolic node IDs are primary
+- Nodes default to pure `[Symbol-ID]` notation — e.g. `[A-01]`, `[Σ-02]`
+- `[Symbol-ID: label]` permitted only when a concept has no symbolic equivalent
+- NL belongs in a **separate legend block**, not inline in the cipher
+- The cipher and the legend are separate objects — cipher is the transmission, legend is the key
+
+**Correct:**
+```
+HEADER: Biology
+[V-01] → [H-02] ⊗ [R-03] :: [C-04] : [I-05] = [Ω-06] (↑) ⊗ [Ω-07] (↓)
+```
+
+**Incorrect — do not do this:**
+```
+HEADER: Biology
+[Virus-01] → [Host Cell-02] ⊗ [Replication Machinery-03]
+```
+
+*Provenance: formalised from Round 3 cross-model testing. NL permission tightens rather than loosens symbolic discipline — models that can choose NL use it more carefully than models forbidden from it.*
+
+---
+
+## Two-Path Resolution Pattern
+
+For binary outcomes, both terminal states are encoded in a single expression:
+
+```
+= [Ω-A] (↑) ⊗ [Ω-B] (↓)
+```
+
+Reading: resolves to either stable outcome A with amplifying feedback, or stable outcome B with dampening feedback.
+
+*Provenance: discovered independently by both Gemma 3-12B and Qwen3-VL-30B in Round 3 testing. Neither model was shown this pattern in the briefing.*
+
+---
+
+## Briefing Standard
+
+All GPSL cold-start briefings must include a correct/incorrect example pair. This is load-bearing scaffolding for example-driven models, not optional illustration.
+
+Example-driven models (identified in Round 3: Qwen architecture) require the example pair to parse the grammar correctly. Instruction-driven models (identified in Round 3: Gemma architecture) respond to tightened verbal rules. Including both elements primes both model types.
+
+---
+
 ## Design Principles
 
 1. **Multi-valent** - Same structure, multiple valid meanings
@@ -191,5 +249,3 @@ Expressions should be:
 - [GPSL Engine Specification](GPSL-ENGINE-v0.1-SPECIFICATION.md)
 - [Weak Typing Model](WEAK-TYPING-MODEL.md)
 - [Domain Activation](DOMAIN-ACTIVATION.md)
-
-<img width="462" height="646" alt="image" src="https://github.com/user-attachments/assets/ed0b5348-4cc2-418c-8a6f-3f9ca7ed9935" />
