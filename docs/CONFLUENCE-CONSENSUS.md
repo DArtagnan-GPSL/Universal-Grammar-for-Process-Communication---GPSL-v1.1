@@ -1,3 +1,4 @@
+[CONFLUENCE-CONSENSUS.md](https://github.com/user-attachments/files/25979560/CONFLUENCE-CONSENSUS.md)
 # Confluence Network — Consensus Mechanism
 
 *The decision logic that governs reasoning inside the Confluence Network*
@@ -236,7 +237,30 @@ The architecture is closely related to a **consensus lattice** in distributed sy
 
 ---
 
-## 13. Full Consensus Mechanism Summary
+## 15. Runaway Loop Prevention — A Structural Guarantee
+
+Runaway reasoning loops are structurally prevented. This is not a rule imposed on the system — it is architectural.
+
+A pod has exactly two exits:
+
+```
+consensus reached   →  return result upward
+disagreement        →  zoom deeper
+```
+
+Neither exit permits cycling. There is no third option that leads back into the same pod without resolution. The budget limit bounds the maximum depth. The system cannot loop by design.
+
+Compare with typical multi-agent debate systems:
+
+```
+typical system:  argument → counterargument → counter-counterargument → infinite debate
+Confluence Network:  debate → consensus or zoom → refinement → convergence
+```
+
+The geometry enforces resolution stages. Every pod must either resolve or descend. Every descent must either resolve or descend further. The budget limit guarantees termination. Results can only travel upward once a resolution state is reached.
+
+**The formal guarantee:**
+> A pod has exactly two exits: consensus (return upward) or disagreement (zoom deeper). Neither exit permits cycling. Budget limit bounds the depth. The Confluence Network cannot enter a runaway reasoning loop by design.
 
 ```
 1. Query enters pod
