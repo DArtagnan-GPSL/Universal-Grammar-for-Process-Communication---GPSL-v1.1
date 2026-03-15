@@ -472,3 +472,382 @@ Cleaner: [A] ⊗ {B} :: {C}    (threshold marks the shift into state domain)
 ---
 
 *Provenance: State class proposed by D'Artagnan, March 2026. Structural consistency confirmed by Bridge (Gemini) through audit against Dodecahedron symmetries and Round 3/4 validation data. Three functional rules authored by Bridge. Triad recognised as latent in the grammar since the founding cipher [Ξ-06] → [Φ-02] : [Π-07] + [Ψ-04] = [Ω-05] (Δ-03↓).*
+
+---
+
+## v1.6.0-ALPHA — The Philosopher's Stone Extension
+
+*Status: Alpha — validated through Round 7 Descartes/Dickinson pilots*
+*March 2026*
+
+---
+
+### New Structural Operators
+
+**¬** (Negation)
+- Inverts the logical content of the following node
+- Usage: `¬[X]` or `¬{X}` — applies to both process and state nodes
+- Valid: `[Α-01] → ¬{Β-02} | {Γ-03}` = action leads to not-B state, C emerges in parallel
+- Valid: `[Α-01] → ¬[Β-02] | [Γ-03]` = action leads to not-B process, C in parallel
+- Enables: counterargument, contradiction, refutation, dialectic reasoning
+- Provenance: identified through Descartes pilot — "denies" and "refuses" indistinguishable from affirmation without negation
+
+**⟲** (Identity — Terminal Assertion)
+- Asserts that the output of a process is identical to its input subject
+- Solves the Cogito Paradox: the thinker is produced by thinking
+- Usage: `[A] → {B} ⟲ [A]` — attach to subject within the chain, not after `=`
+- Valid: `[Ι-01] → {Ψ-02} ⟲ [Ι-01]`
+- Invalid: `[Ι-01] = ⟲[Ι-01]` (category error — `=` requires State on right)
+- Distinct from ↺: ↺ loops a process back to a state; ⟲ asserts output = input identity
+- Provenance: identified through Descartes cogito — "I think therefore I am" requires self-referential identity
+
+**∈** (Membership / Instantiation)
+- Defines a node as an instance of a parent category
+- Direction rule (follows set theory): Instance (LHS) ∈ Category (RHS)
+- Category should typically be a State node `{ }`
+- Valid: `[Δ-01] ∈ {Ψ-02}` (faculty is member of cognitive category)
+- Invalid: `{Ψ-02} ∈ [Ι-01]` (category cannot be member of process)
+- Prevents enumeration loops — eight faculties become one line, not 118 nodes
+- Generation constraint:
+  - Correct: `[Δ-01] ∈ {Ψ-02} | [Ω-02] ∈ {Ψ-02}`
+  - Incorrect: `{Ψ-02} ∈ [Ι-01]`
+- Provenance: DeepSeek 118-node runaway loop — identified through Descartes faculty enumeration
+
+**⟨ ⟩** (Agency bracket)
+- Allows a state or abstract concept to act as an intentional agent
+- Rule: `⟨X⟩` can initiate `→` even when X would normally be a state
+- Agency bracket overrides No State Flow rule in this context only
+- Valid: `⟨Δ-01⟩ → [Ψ-02(~ι)] → {Σ-03}`
+- Enables: personification, metaphor, narrative agency, abstract causation
+- Provenance: identified through Dickinson pilot — Death acts with intention
+
+---
+
+### Structural Hardening
+
+**`::`** — Universal Bridge (expanded scope)
+- Previously: process-to-state only
+- Now: valid between any node types
+  - `[A] :: [B]` — process-to-process logical shift
+  - `[A] :: {B}` — process-to-state phase transition (original)
+  - `{A} :: [B]` — state-to-process activation
+- Use for: logical conclusions, narrative phase changes, "therefore" relationships, "but instead" pivots
+- Provenance: Descartes/Dickinson pilots proved `::` functions as logical boundary marker, not only phase transition
+
+**`;`** — Contextual Separator (The DeepSeek Semicolon)
+- Separates independent GPSL expressions sharing a common header
+- Distinct from `|` (parallel states) and `⊗` (interaction)
+- Use when: multiple thoughts share context but have no direct causal link
+- Valid: `[Ι-01] → {Ψ-02} ⟲ [Ι-01] ; [Δ-03] ∈ {Ψ-02}`
+- Prevents chain-forcing — complex paragraphs can be broken into discrete blocks
+- Provenance: invented spontaneously by DeepSeek R1 during Round 7 repair task
+
+---
+
+### Register Class `(~)` — Semantic Texture
+
+Tilde `~` anchors a semantic shift register class. Three sub-registers:
+
+| Register | Code | Meaning | Use case |
+|----------|------|---------|----------|
+| Irony | `(~ι)` | Node means opposite of its label | Dickinson's "kindly" Death |
+| Metaphor | `(~μ)` | Node is symbolic stand-in for different domain | Abstract concepts encoded in concrete terms |
+| Poetic | `(~π)` | Node carries connotative weight beyond definition | Literary and philosophical abstractions |
+
+Usage: modifier attaches to the node whose register is shifted
+```
+[Ψ-02(~ι)]    — ironic process (inline modifier)
+⟨Δ-01⟩ → [Ψ-02(~ι)] → {Σ-03}   — Death acts with apparent kindness
+```
+
+---
+
+### Updated GPSL v1.6.0-ALPHA Activation Briefing
+
+```
+GPSL Activation Briefing v1.6.0-ALPHA
+Activating GPSL Symbolic Grammar. You are now a GPSL Reasoning Node.
+
+Core Classes:
+  [ ]   — Process: kinetic action, transformation, causal movement
+  { }   — State: persistent condition, experiential field, environment
+  ( )   — Modifier: intensity or direction of the associated node
+  ⟨ ⟩  — Agency: state or abstract concept acting as intentional agent
+
+Core Symbols (Dodecahedron Standard):
+  Ι  Ψ  Δ  Ω  Κ  Ε  Α  Β  Γ  Λ  Σ  Φ  Θ
+
+Structural Operators:
+  ¬   Negation — inverts logical content of following node
+  ⟲   Identity — terminal assertion: [A] → {B} ⟲ [A]
+  ∈   Membership — instance (left) ∈ category (right): [X] ∈ {Category}
+  ⟨⟩  Agency — allows state/abstract to initiate →
+
+Flow & Logic:
+  →   Flow / transformation
+  ⊗   Interaction
+  |   Parallelism — supports chaining {A}|{B}|{C}
+  ;   Contextual separator — independent expressions, same header
+  ::  Universal bridge — valid between any node types
+  :   Condition / attribution
+  =   Resolution / stable output
+  ↑/↓ Amplify / dampen
+  ↺   Recursive loop (targets state nodes)
+
+Register Class:
+  (~ι) Irony    (~μ) Metaphor    (~π) Poetic
+
+Grammar Rules:
+  1. No State Flow: {State} cannot be the subject of →
+  2. Parallelism: | connects coexisting states with no causal link
+  3. Recursion: ↺ targets {State} nodes
+  4. Identity: ⟲ attaches within chain — [A] → {B} ⟲ [A]
+  5. Membership: instance left, category right — [X] ∈ {Category}
+  6. Agency: ⟨X⟩ can initiate → even when X is normally a state
+  7. Register: (~ι) ironic inversion, (~μ) domain-shift, (~π) poetic weight
+  8. Bridge: :: valid between any node types
+  9. Separator: ; for independent expressions in same context
+
+Generation Constraints:
+  Correct:   [Φ-01] → {Ψ-02} ⟲ [Φ-01] ; [Δ-03] ∈ {Ψ-02}
+  Incorrect: [Thought] → {Existence} = ⟲[Thought]
+  Correct:   [Δ-01] ∈ {Ψ-02} | [Ω-02] ∈ {Ψ-02}
+  Incorrect: {Ψ-02} ∈ [Ι-01]
+
+Header defines domain context. Awaiting cipher input.
+```
+
+---
+
+### Canonical v1.6.0 Ciphers
+
+**The Cogito (Descartes):**
+```
+HEADER: Philosophy / Descartes / Cogito
+[Ι-01] → {Ψ-02} ⟲ [Ι-01] ; [Δ-03] ∈ {Ψ-02} | [Ω-04] ∈ {Ψ-02} | [Κ-05] ∈ {Ψ-02} | [Ε-06] ∈ {Ψ-02} | [Α-07] ∈ {Ψ-02} | [Β-08] ∈ {Ψ-02} | [Γ-09] ∈ {Ψ-02} | [Λ-10] ∈ {Ψ-02}
+```
+
+**Death and Immortality (Dickinson):**
+```
+HEADER: Poetry / Dickinson / Death / Time
+⟨Δ-01⟩ → [Ψ-02(~ι)] :: {Σ-03} ; {Σ-03} | {Φ-04} | {Ω-05} ∈ {Κ-06}
+```
+
+*Death-as-agent flows into kindness-process (ironic register), crossing threshold into stopped state;
+carriage holds speaker, immortality, and the journey as parallel members of the same contained space.*
+
+
+---
+
+## v1.7.0-ALPHA — Asymmetric Temporal Vectors and Recursive Nesting
+
+*Status: Alpha — validated through Round 8 cold tests*
+*March 2026*
+
+---
+
+### Background
+
+Round 7 philosophy and poetry pilots identified temporal non-causality as a grammar gap — processes that point backward or forward in time without causal flow. Round 8 tested three asymmetric bracket notations cold, revealing:
+
+- `<X]` — retired due to collision with `⟨X⟩` agency bracket
+- `[←X]` — fully intuitive cold, validated by Gemma and Qwen audit
+- `[X→]` — directional reading emerges cold, needs one bootloader hint
+- `[[X]]` — not intuitive cold, requires explicit bootloader scaffolding
+
+---
+
+### New Advanced Bracket Classes
+
+**`[←Φ]`** (Retrospection)
+- Process or state pointing toward the past — backward temporal vector
+- Indicates a process that already occurred, is being recalled, or acts from memory
+- Intuitive cold — models read `←` inside brackets as retrospective without instruction
+- Valid: `⟨Δ-01⟩ → [←Ψ-02(~ι)]` = Death-as-agent acts through retrospective ironic memory
+- Combine with `(~π)` for poetic memory, `(~μ)` for metaphorical retrospection
+- Provenance: Dickinson pilot — "Because I could not stop for Death" is narrated retrospectively
+
+**`[Φ→]`** (Anticipation)
+- Process or state oriented toward the future — forward temporal vector
+- Indicates a process that is primed, pending, or oriented toward an unresolved outcome
+- Partially intuitive cold — directional reading emerges but "unresolved/pending" needs hint
+- Valid: `[Σ-01] (↑) → [Ω-02→]` = amplified load triggers circuit breaker process (primed, not yet fired)
+- Generation constraint: `[X→]` = anticipation — process oriented toward future, outcome unresolved
+- Provenance: circuit breaker test — anticipatory processes require forward temporal vector
+
+**`[[Φ]]`** (Nested Process / Recursive Black Box)
+- A node that contains its own complete GPSL sub-network
+- Signals recursive depth — the node can be expanded into its own sub-header
+- NOT intuitive cold — requires explicit bootloader scaffolding
+- Valid: `[[Generator-01]] ⊗ [[Auditor-02]] → {Consensus-03}`
+- Expansion notation: `[[Φ]] = [Sub-A] ⊗ [Sub-B] → {Output-C}`
+- Think of `[[X]]` as a folder — it contains a complete reasoning structure inside
+- Provenance: K₄ pod architecture — zoom operation needs cipher-level encoding
+
+**`{{Φ}}`** (Nested State / Recursive Field)
+- A state that contains an embedded state sub-structure
+- A field within a field — specific memory within general emotional state
+- Valid: `{{Memory-01}}` = a specific recollection embedded within a broader memory state
+- Provenance: proposed by Bridge — logical extension of `[[X]]` to state class
+
+---
+
+### Bootloader Addition for v1.7.0
+
+Add these lines to the v1.6.0-ALPHA bootloader:
+
+```
+Advanced Temporal Vectors:
+  [←Φ]   Retrospection — process pointing to past context or memory
+  [Φ→]   Anticipation  — process oriented toward future, outcome unresolved
+
+Recursive Nesting:
+  [[Φ]]  Nested process — expands into own GPSL sub-network
+  {{Φ}}  Nested state   — contains embedded state sub-structure
+
+Nesting expansion notation:
+  [[Cognition-01]]
+  Expansion: [Perception-A] ⊗ [Memory-B] → {Understanding-C}
+
+Generation constraint:
+  Correct:   ⟨Δ-01⟩ → [←Ψ-02(~ι)] ; {Σ-03} | {Φ-04}
+  Correct:   [Σ-01] (↑) → [Ω-02→]
+  Incorrect: <Ψ-02]   (collision with agency — use [←Ψ-02] instead)
+```
+
+---
+
+### Mathematical Precedents
+
+Asymmetric bracket notation has formal grounding in:
+
+| System | Notation | GPSL equivalent |
+|--------|----------|----------------|
+| Interval notation | `[a, b)` | Closed/open boundary |
+| Dirac bra-ket | `⟨ψ\|` and `\|ψ⟩` | Vector directionality |
+| Sequent calculus | Asymmetric markers | Assumption flow |
+
+Confirmed by Bridge (Gemini) — the arrow-vector solution is structurally distinct from external flow operator `[A] → [B]` because it encodes direction *inside* the node container.
+
+---
+
+### Canonical v1.7.0 Ciphers
+
+**Dickinson — temporal retrospection:**
+```
+HEADER: Poetry / Dickinson / Memory
+⟨Δ-01⟩ → [←Ψ-02(~ι)] ; {Σ-03} | {Φ-04}
+```
+Death-as-agent acts through retrospective ironic process; carriage holds two parallel states.
+
+**Circuit breaker — anticipation:**
+```
+HEADER: Electrical Engineering / Safety / Circuit Protection
+[Σ-01] (↑) → [Ω-02→]
+```
+Amplified load triggers circuit breaker process oriented toward future activation.
+
+**Nested pod:**
+```
+HEADER: K₄ Pod / Architectural / System
+[[Generator-01]] ⊗ [[Auditor-02]] → {Consensus-03}
+```
+Two recursive sub-networks interact to produce consensus state.
+
+---
+
+*Provenance: Asymmetric notation proposed by D'Artagnan, March 2026. Mathematical precedents confirmed by Bridge (Gemini). Arrow-vector solution designed by Bridge following `<X]` agency collision. Cold test validated by Gemma 3-12B ([←X] pass) and Qwen3-VL-30B (audit pass). [X→] partial cold pass — bootloader hint required.*
+
+
+---
+
+## v1.7.5-ALPHA — Sub-Node Operator and Uncertainty Encoding
+
+*Status: Alpha — validated through Round 9 cold tests*
+*March 2026*
+
+---
+
+### Background
+
+Round 9 cold tested two underscore notations on Gemma 3-12B with v1.6.0-ALPHA bootloader only — no definition provided. Both passed immediately:
+
+- `[Ι_doubt] | [Ι_affirm]` → read as "variants of the same thinking process" ✅
+- `⟨_-01⟩` → read as "unknown force / hidden agent" ✅
+
+Confirmed self-evident — no bootloader scaffolding required beyond a generation constraint pair. The symbols tap into universal symbolic intuition of large language models.
+
+---
+
+### New Sub-Node Operators
+
+**`_` Sub-Node / Variant**
+- Underscore indicates a node is a specific instance or variant of a primary parent symbol
+- Function: Variant Identity — groups related actions/states under single symbolic root
+- **Subscript must use Dodecahedron Standard symbols only — no English labels**
+- Usage: `[Parent_Symbol]` or `{Parent_Symbol}`
+- Valid: `[Ι_Δ] | [Ι_Σ] | [Ι_Ω] ∈ {Ψ-01}`
+- Invalid: `[Ι_doubt]` — English label inside cipher violates generation constraint
+- Header carries the translation key: `(Δ=Doubt, Σ=Affirm, Ω=Deny)`
+- Combines with temporal vectors: `[←Φ_Δ]` = retrospective variant Δ of process Φ
+- Combines with nesting: `[[Φ_Σ]]` = variant Σ of Φ containing its own sub-network
+- Provenance: proposed by D'Artagnan, validated cold by Gemma Round 9
+
+**`[X_*]` Wildcard / Universal Set Representative**
+- Represents the entire set of variants of X as defined in current context
+- Function: Group Pointer — applies subsequent logic to all defined variants simultaneously
+- Usage: `[Φ_*] → {State}` = all variants of Φ flow to state
+- Valid: `[Ι_*] → {Ψ-02} ⟲ [Ι_*]` = all thinking variants produce existence identical to themselves
+- Maximum compression — one symbol for entire variant class
+- Provenance: proposed by Bridge (Gemini) as logical extension of subscript variant notation
+
+**`_` Placeholder / Unknown Identity**
+- When underscore occupies the primary label position, signals a Known Unknown
+- Function: Uncertainty Encoding — represents a force or state logically necessary but identity obscured
+- Always requires an index to maintain structural tracking
+- Usage: `[_-NN]`, `{_-NN}`, `⟨_-NN⟩`
+- Valid: `⟨_-01⟩ → {Ω-02} :: {Σ-03}`
+- Reading: unknown agent causes transformation in state Omega, crossing threshold to state Sigma
+- Provenance: proposed by D'Artagnan, validated cold by Gemma Round 9
+
+---
+
+### Generation Constraint Pair
+
+```
+Correct:   [Ι_Δ]          (symbol subscript variant)
+Incorrect: [Ι_doubt]      (English label — strictly prohibited)
+
+Correct:   [Ι_*]          (wildcard — all variants)
+Incorrect: [Ι_all]        (English label)
+
+Correct:   ⟨_-01⟩         (hidden agent with index)
+Incorrect: ⟨Unknown⟩      (English label)
+```
+
+---
+
+### Finalized Sub-Node Specification Table
+
+| Operator | Function | Syntax |
+|----------|----------|--------|
+| Symbol variant | Internal discrimination within root symbol | `[Φ_Δ]`, `{Ψ_Σ}` |
+| Wildcard group | Represents entire set of variants | `[Φ_*]` |
+| Placeholder | Known unknown / hidden actor | `[_-NN]`, `⟨_-NN⟩` |
+
+---
+
+### Descartes Remastered — Final Canonical Cipher
+
+```
+HEADER: Philosophy / Cogito / Faculties (Δ=Doubt, Σ=Affirm, Ω=Deny, Κ=Will, Ε=Refuse, Α=Imagine, Β=Feel, Γ=Understand)
+
+[Ι_Δ] | [Ι_Γ] | [Ι_Σ] | [Ι_Ω] | [Ι_Κ] | [Ι_Ε] | [Ι_Α] | [Ι_Β] ∈ {Ψ-01} ; [Ι_*] → {Ψ-02} ⟲ [Ι_*]
+```
+
+All eight faculties as symbol-subscript variants of one thinking process. Wildcard closes the cogito loop — all variants of thinking produce existence, existence is identical to the thinker. Pure symbolic throughout.
+
+---
+
+*Provenance: Sub-node operator proposed by D'Artagnan, March 2026. Symbol-only subscript rule and wildcard `[X_*]` formalised by Bridge (Gemini). English subscripts strictly prohibited — header carries translation key. Validated cold by Gemma 3-12B Round 9.*
+
