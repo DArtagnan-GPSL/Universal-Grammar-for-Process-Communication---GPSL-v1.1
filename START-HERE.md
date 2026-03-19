@@ -9,7 +9,7 @@ Copy and paste the block below into any AI — ChatGPT, Claude, Gemini, anything
 ## The Experiment
 
 ```
-[Ξ-06] → [Φ-02] : [Π-07] + [Ψ-04] = [Ω-05] (Δ-03↓)
+[Ξ-06] → [Φ-02] : {Π-07} ⊗ {Ψ-04} = [Ω-05] (Δ-03↓)
 
 What does this expression mean?
 ```
@@ -19,7 +19,7 @@ Read the response. Then try this:
 ```
 HEADER: Consciousness
 
-[Ξ-06] → [Φ-02] : [Π-07] + [Ψ-04] = [Ω-05] (Δ-03↓)
+[Ξ-06] → [Φ-02] : {Π-07} ⊗ {Ψ-04} = [Ω-05] (Δ-03↓)
 
 What does this expression mean?
 ```
@@ -29,7 +29,7 @@ Then this:
 ```
 HEADER: Biology
 
-[Ξ-06] → [Φ-02] : [Π-07] + [Ψ-04] = [Ω-05] (Δ-03↓)
+[Ξ-06] → [Φ-02] : {Π-07} ⊗ {Ψ-04} = [Ω-05] (Δ-03↓)
 
 What does this expression mean?
 ```
@@ -39,7 +39,7 @@ Then this:
 ```
 HEADER: Distributed Systems
 
-[Ξ-06] → [Φ-02] : [Π-07] + [Ψ-04] = [Ω-05] (Δ-03↓)
+[Ξ-06] → [Φ-02] : {Π-07} ⊗ {Ψ-04} = [Ω-05] (Δ-03↓)
 
 What does this expression mean?
 ```
@@ -77,11 +77,13 @@ We excavated it.
 
 ## Now Read the Repo
 
-Start with [README.md](README.md) for the full architecture.
+Start with [README.md](README.md) for the full picture.
 
-Or go straight to [spec/SYMBOLIC-LANGUAGE.md](spec/SYMBOLIC-LANGUAGE.md) to see how far the language has grown since that first cipher.
+Or go straight to [spec/GPSL-v1.8.0.md](spec/GPSL-v1.8.0.md) to see how far the language has grown since that first cipher.
 
-Or explore [emergent-archaeology/](emergent-archaeology/) to see what happens when you give models nothing but a cipher and watch what they build.
+Or explore [Research/EMERGENT-ARCHAEOLOGY-NO-BOOTLOADER-MATRIX.md](Research/EMERGENT-ARCHAEOLOGY-NO-BOOTLOADER-MATRIX.md) to see what happens when you give models nothing but a cipher and watch what they build.
+
+Or try the full experiment sequence in [TRY-IT-YOURSELF.md](TRY-IT-YOURSELF.md).
 
 ---
 
